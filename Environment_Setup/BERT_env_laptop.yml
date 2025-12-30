@@ -1,0 +1,16 @@
+name: bert_sentiment_laptop
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pytorch-cpu  # Added for BERT tensor handling
+  - pip:
+    - transformers  # Added for BERT Tokenizer
+    - datasets      # Added for IMDB data loading
